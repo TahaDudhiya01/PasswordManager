@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.password-item {
+  position: relative;
+  background: #f9f9f9;
+  border-left: 4px solid #4caf50;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.info-line {
+  margin: 8px 0;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.copy-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.copy-btn:hover {
+  background: #2980b9;
+}
+
+.delete-btn {
+  text-align: center;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  width: 70px;
+  position: absolute;
+  border-radius: 5px;
+  top: 10px;
+  right: 10px;
+  background-color: #c0392b;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.delete-btn:hover {
+  background: #d25c4f;
+}
+.tooltip {
+  display: inline-block;
+  margin-left: 8px;
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  position: relative;
+  top: -1px;
+  opacity: 0;
+  animation: fadeInOut 1.5s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(5px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(5px);
+  }
+}
+
+@media (max-width: 480px) {
+  form input,
+  form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .password-item {
+    font-size: 14px;
+  }
+
+  .copy-btn,
+  .delete-btn {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+}
